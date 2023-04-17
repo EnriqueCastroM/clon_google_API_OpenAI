@@ -1,0 +1,119 @@
+/* Estilos para el header, main y footer */
+
+/* Estilos para las imágenes del encabezado */
+header img {
+    max-width: 100%; /* Asegura que las imágenes no sean más anchas que su contenedor */
+    height: auto; /* Mantiene la relación de aspecto de las imágenes */
+    max-height: 32px; /* Define la altura máxima para las imágenes en el encabezado */
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Estilos para el logo, input y botones */
+#logo {
+    width: 272px;
+    height: 92px;
+    margin-bottom: 20px;
+}
+
+#input-search {
+    width: 100%;
+    max-width: 600px;
+    height: 36px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+    outline: none;
+}
+
+#input-search:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.btn-search {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #dfe1e5;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn-search:hover {
+    background-color: #e8eaed;
+}
+
+/* Estilos para los links del footer */
+.footer-link {
+    display: inline-block;
+    margin-right: 10px;
+    color: #202124;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.spinner {
+    display: none;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .results {
+    position: relative;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .copy-btn {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  

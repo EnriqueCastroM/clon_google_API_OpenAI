@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon de Google</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo2.png">
+
+</head>
+<body>
+<header>
+    <img src="images/logo3.png" alt="Logo 1">
+    <a href="#">Google drives</a>
+    <img src="images/logo2.png" alt="Logo 2">
+    <a href="#">Home</a>
+</header>
+<main>
+    <img src="images/logo1.png" alt="Logo Google" id="logo">
+    <input type="text" id="input-search" onkeypress="handleKeyPress(event)" placeholder="Escribe aquí tu búsqueda..." />
+    <button id="search" onclick="searchText()">Buscar con Google</button>
+    <button id="lucky" onclick="searchText()">Me siento con suerte</button>
+    <div id="spinner" class="spinner"></div>
+    <div id="results-container" class="results">        
+    </div>
+    <button id="copy-btn" onclick="copyToClipboard()" class="copy-btn">Copiar al portapapeles</button>
+</main>
+<footer>
+    <a href="#" class="footer-link">Github</a>
+    <a href="#" class="footer-link">Linkedin</a>
+    <!-- Agrega los demás links aquí -->
+</footer>
+<script src="openai.js"></script>
+</body>
+
+</html>

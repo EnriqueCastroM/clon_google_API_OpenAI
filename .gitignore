@@ -1,0 +1,17 @@
+# Archivos de configuración de entorno
+.env
+
+# Directorios de nodos
+node_modules/
+
+# Archivos de registro
+*.log
+
+# Archivos temporales
+*.tmp
+*.swp
+*.swo
+
+# Archivos y directorios específicos del sistema operativo
+.DS_Store
+Thumbs.db
